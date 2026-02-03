@@ -127,7 +127,7 @@ function typeLinesInto(element, lines, opts = {}) {
 
 // When opening modal, play the wishing script and ensure image loads
 // Image source: images/ushagiiii.webp
-const DEFAULT_IMAGE_PATH = 'images/ushagiiii.webp';
+const DEFAULT_IMAGE_PATH = 'ushagiiii.webp';
 function openModalWithWish() {
     const img = document.getElementById('popupImage');
     const popupContainer = document.querySelector('.popup-image');
@@ -170,7 +170,7 @@ function openModalWithWish() {
         "Make a wish — then blow the candles! ✨"
     ];
     // type into #wishLine
-    typeLinesInto('wishLine', lines, { speed: 40, pause: 900 });
+    typeLinesInto('wishLine', lines, { speed: 20, pause: 900 });
 }
 
 // Replace celebrate() call to use the combined behavior
