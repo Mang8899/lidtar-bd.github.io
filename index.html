@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidtar Birthday | wishing you a wonderful day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="fireworks" id="fireworks"></div>
+
+    <div class="container">
+        <div class="postcard">
+            <h2>🎊 Happy Birthday 🎊 <br>Lidtar🐰</h2>
+
+            <div class="cake-wrapper">
+                <div class="cake-tier tier-3">
+                    <div class="candle-box">
+
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                    
+                    </div>
+                    <div class="frosting-drip"></div>
+                </div>
+                <div class="cake-tier tier-2">
+                    <div class="frosting-drip"></div>
+                </div>
+                <div class="cake-tier tier-1">
+                    <div class="frosting-drip"></div>
+                <div class="cake-plate"></div>
+            </div>
+
+            <p class="message">
+                May your day be filled with love, cake, and everything that makes you smile <br> "Lidtar"
+            </p>
+            
+            <button class="wish-button" onclick="celebrate()">Make a wish!✨</button>
+        </div>
+    </div>
+    
+    <!-- Popup modal (hidden by default) -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="close-btn" id="closeModal" aria-label="Close">✕</button>
+            <h3 id="modalTitle">Surprise!</h3>
+            <div class="popup-image">
+                <!-- Image source: images/ushagiiii.webp -->
+                <img id="popupImage" src="ushagiiii.webp" alt="Surprise image" />
+            </div>
+            <p class="modal-text"><span id="wishLine" class="wish-line"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
