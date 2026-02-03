@@ -127,7 +127,7 @@ function typeLinesInto(element, lines, opts = {}) {
 
 // When opening modal, play the wishing script and ensure image loads
 // Image source: images/ushagiiii.webp
-const DEFAULT_IMAGE_PATH = 'ushagiiii.webp';
+const DEFAULT_IMAGE_PATH = 'ushagiiii.png';
 function openModalWithWish() {
     const img = document.getElementById('popupImage');
     const popupContainer = document.querySelector('.popup-image');
@@ -150,7 +150,6 @@ function openModalWithWish() {
                     note.style.marginTop = '8px';
                     note.style.color = '#6b2742';
                     note.style.fontSize = '0.95rem';
-                    note.innerHTML = '<strong>⭐ Image not found!</strong><br>Make sure <code>ushagiiii.webp</code> is in your project folder.';
                     popupContainer.appendChild(note);
                 }
                 // inject a simple inline fallback (small rabbit) so the popup still looks nice
